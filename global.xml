@@ -10,6 +10,6 @@
     </project>
 
     <!-- Release Engineering -->
-    <project path="releng/manifest" name="manifest" dest-branch="master" groups="releng"/>
-    <project path="releng/leaf" name="leaf" dest-branch="master" groups="releng"/>
+    <project path="releng/manifest" name="manifest" dest-branch="master" groups="notdefault,releng"/>
+    <project path="releng/leaf" name="leaf" dest-branch="master" groups="notdefault,releng"/>
 </manifest>
