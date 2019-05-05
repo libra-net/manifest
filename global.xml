@@ -3,6 +3,13 @@
     <remote name="libra-github" fetch="."/>
     <default remote="libra-github" revision="refs/heads/master"/>
 
+    <!-- Workspace configuration -->
+    <project path="config" name="workspace" dest-branch="master" groups="default,releng">
+        <linkfile src="leaf-workspace.json" dest="leaf-workspace.json"/>
+        <linkfile src=".vscode" dest=".vscode"/>
+    </project>
+
     <!-- Release Engineering -->
     <project path="releng/manifest" name="manifest" dest-branch="master" groups="releng"/>
+    <project path="releng/leaf" name="leaf" dest-branch="master" groups="releng"/>
 </manifest>
