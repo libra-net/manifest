@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="libra-github" fetch="."/>
+    <remote name="libra-github" alias="origin" fetch="."/>
     <default remote="libra-github" revision="refs/heads/master"/>
 
     <!-- Workspace configuration -->
@@ -12,4 +12,5 @@
     <!-- Release Engineering -->
     <project path="releng/manifest" name="manifest" dest-branch="master" groups="notdefault,releng"/>
     <project path="releng/leaf" name="leaf" dest-branch="master" groups="notdefault,releng"/>
+    <project path="releng/ubuntu-box" name="ubuntu-box" dest-branch="master" groups="notdefault,releng"/>
 </manifest>
