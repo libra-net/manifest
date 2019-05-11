@@ -12,5 +12,5 @@
     <!-- Release Engineering -->
     <project path="releng/manifest" name="manifest" dest-branch="master" groups="notdefault,releng"/>
     <project path="releng/leaf" name="leaf" dest-branch="master" groups="notdefault,releng"/>
-    <project path="releng/ubuntu-box" name="ubuntu-box" dest-branch="master" groups="notdefault,releng"/>
+    <project path="releng/linux-box" name="linux-box" dest-branch="master" groups="notdefault,releng"/>
 </manifest>
