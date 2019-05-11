@@ -3,14 +3,14 @@
     <remote name="libra-github" alias="origin" fetch="."/>
     <default remote="libra-github" revision="refs/heads/master"/>
 
-    <!-- Workspace configuration -->
-    <project path="config" name="workspace" dest-branch="master" groups="default,releng">
+    <!-- Default source mode: workspace configuration + core project -->
+    <project path="config" name="workspace" dest-branch="master" groups="default">
         <linkfile src="leaf-workspace.json" dest="leaf-workspace.json"/>
         <linkfile src=".vscode" dest=".vscode"/>
     </project>
+    <project path="core" name="core" dest-branch="master" groups="default"/>
 
     <!-- Release Engineering -->
     <project path="releng/manifest" name="manifest" dest-branch="master" groups="notdefault,releng"/>
-    <project path="releng/leaf" name="leaf" dest-branch="master" groups="notdefault,releng"/>
     <project path="releng/linux-box" name="linux-box" dest-branch="master" groups="notdefault,releng"/>
 </manifest>
